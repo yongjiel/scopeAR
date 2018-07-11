@@ -17,9 +17,9 @@ class TreeShape < Shape
     # '*' in index range(middle_idx - line_index, 
     # middle_idx + line_index)
     # params: xi  - line_index of 0 based.
-    # return: an array of column numbers corresponding to 
-    #         the current line index which can make 
-    #         the tree shap.   
+    # return: an array of column index numbers corresponding  
+    #         to the current line index which can make 
+    #         the tree shape.   
     yi_min = self.height - 1 - xi
     yi_max = self.height - 1 + xi
     y_array = (yi_min..yi_max).to_a

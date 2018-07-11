@@ -46,7 +46,7 @@ class Shape
         # figure out the columns of that row which should be 
         # filled with '*' to make the shape.
         # params: xi - row index of 0 based.
-        # return: array of those columns.
+        # return: an array of indices of those columns.
         []
     end
 

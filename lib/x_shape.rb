@@ -17,8 +17,8 @@ class XShape < Shape
       # index, and the right side '*' index match 
       # self.height - 1 - row_index.
       # params: xi  - line_index from 0
-      # return: an array of column numbers corresponding to 
-      #         the current line index which can make 
+      # return: an array of column index numbers corresponding  
+      #         to the current line index which can make 
       #         the X shap.
       yi_right = self.height - 1 - xi
       yi_left = xi
