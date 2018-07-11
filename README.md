@@ -18,7 +18,7 @@ Part 2: X shape
 ------
 1. $cd scopeAR
 2. $ruby x.rb <# of row or height>
-3. If need help, please run 'ruby christmas_tree.rb [-h|-help|--help]'
+3. If need help, please run 'ruby x.rb [-h|-help|--help]'
 
 Test: 
 ------
