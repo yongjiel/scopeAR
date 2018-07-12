@@ -3,19 +3,19 @@ require "test/unit"
  
 class TestTreeShape < Test::Unit::TestCase
  
+  # christmas tree shape grid is a retangle
+  # the width(columns) is calculated baesd on 
+  # the height(rows)
   def test_get_width
-    # christmas tree shape grid is a retangle
-    # the width(columns) is calculated baesd on 
-    # the height(rows)
     t = TreeShape.new(8)
     its_width = t.get_width()
     assert_equal(its_width, t.width)
   end
 
+  # grid should be created when new object of 
+  # tree shape class up. all the grid ponints 
+  # should be equal to heigth * width
   def test_grid
-    # grid should be created when new object of 
-    # tree shape class up. all the grid ponints 
-    # should be equal to heigth * width
     t = TreeShape.new(8)
     count = 0
     t.grid.each_index do |xi|
@@ -26,11 +26,11 @@ class TestTreeShape < Test::Unit::TestCase
     assert_equal(count, t.height * t.width)
   end
 
+  # after grid is filled, it should be the shape of '*'
+  # comes up. For christmas tree, first row always has one 
+  # "*", second row has 3 "*", thrid row has 5, fourth row
+  # has 7. Now ussing 4 rows to test.
   def test_fill_grid
-    # after grid is filled, it should be the shape of '*'
-    # comes up. For christmas tree, first row always has one 
-    # "*", second row has 3 "*", thrid row has 5, fourth row
-    # has 7. Now ussing 4 rows to test.
     final_count_array = [1, 3, 5, 7]
     t = TreeShape.new(4)
     t.fill_grid()

@@ -3,19 +3,19 @@ require "test/unit"
  
 class TestXShape < Test::Unit::TestCase
  
+  # X shape shape grid is a retangle
+  # the width(columns) is calculated baesd on 
+  # the height(rows)
   def test_get_width
-    # X shape shape grid is a retangle
-    # the width(columns) is calculated baesd on 
-    # the height(rows)
     t = XShape.new(8)
     its_width = t.get_width()
     assert_equal(its_width, t.width)
   end
 
+  # grid should be created when new object of 
+  # tree shape class up. all the grid ponints 
+  # should be equal to heigth * width
   def test_grid
-    # grid should be created when new object of 
-    # tree shape class up. all the grid ponints 
-    # should be equal to heigth * width
     t = XShape.new(8)
     count = 0
     t.grid.each_index do |xi|
@@ -26,12 +26,13 @@ class TestXShape < Test::Unit::TestCase
     assert_equal(count, t.height * t.width)
   end
 
+
+  # after grid is filled, it should be the shape of '*'
+  # X. For x shape, first row always has one "*" at first
+  # index and last index, 
+  # second row has "*" at index 1 and index -2.
+  # Now use height 5 to do the test.
   def test_fill_grid
-    # after grid is filled, it should be the shape of '*'
-    # X. For x shape, first row always has one "*" at first
-    # index and last index, 
-    # second row has "*" at index 1 and index -2.
-    # Now use height 5 to do the test.
     final_point_array = [[0,4], [1,3], [2,2], [3,1],[4,0]]
     t = XShape.new(5)
     t.fill_grid()
