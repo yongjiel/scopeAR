@@ -3,10 +3,10 @@ ScopeAR Assignment of Shapes
 
 Prerequisite: 
 ------
-Linux or Mac, Ruby of any version installed, ruby module or gem 'test/unit' must exist.
-If you do not have ruby installed, please reference https://www.ruby-lang.org/en/documentation/installation/ to install ruby first.
-To test if 'test/unit' is installed, please try ' ruby -e 'require "test/unit"' '. If not, please reference https://rubygems.org/gems/test-unit/versions/3.1.8 to install the modlue.
-Please use 'git clone' command to download the entire package into your local environmen first.
+1. Linux or Mac, Ruby of any version installed, ruby module or gem 'test/unit' must exist.
+2. If you do not have ruby installed, please reference https://www.ruby-lang.org/en/documentation/installation/ to install ruby first.
+3. To test if 'test/unit' is installed, please try ' ruby -e 'require "test/unit"' '. If not, please reference https://rubygems.org/gems/test-unit/versions/3.1.8 to install the modlue.
+4. Please use 'git clone' command to download the entire package into your local environmen first.
 
 Part 1: Chistmas Tree
 ------
